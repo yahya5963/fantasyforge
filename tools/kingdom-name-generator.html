@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Name Generator - 10,000+ Epic Realm Names | FantasyForge</title>
+    <meta name="description" content="Forge unique kingdom and empire names for your fantasy novel or D&D world. High-quality worldbuilding tool with historical linguistic roots.">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Kingdom Name Generator",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "All",
+      "offers": { "@type": "Offer", "price": "0" }
+    }
+    </script>
+</head>
+<body>
+    <button id="mobile-toggle">Menu</button>
+    
+    <aside id="sidebar">
+        <a href="../index.html" class="logo">FantasyForge</a>
+        <input type="text" id="navSearch" placeholder="Search tools...">
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="favorites.html">♥ Favorites</a></li>
+            <li><h4 style="color:var(--accent-gold); padding:10px; font-size:0.7rem; text-transform:uppercase;">Generators</h4></li>
+            <li><a href="kingdom-name-generator.html">Kingdoms</a></li>
+            <li><a href="dragon-name-generator.html">Dragons</a></li>
+            <li><a href="wizard-name-generator.html">Wizards</a></li>
+            <!-- ... other links ... -->
+        </ul>
+    </aside>
+
+    <main>
+        <section class="generator-container">
+            <h1>Kingdom Name Generator</h1>
+            <p style="color:var(--text-muted); margin-bottom:20px;">Forge the identity of your empires and monarchies.</p>
+            
+            <div class="gen-controls">
+                <select id="genCount">
+                    <option value="5">5 Names</option>
+                    <option value="10" selected>10 Names</option>
+                    <option value="20">20 Names</option>
+                </select>
+                <button class="btn-primary" onclick="generateNames('kingdom')">Forge New Names</button>
+                <button onclick="downloadTXT()">Download TXT</button>
+            </div>
+            
+            <ul id="outputList" data-type="kingdom"></ul>
+        </section>
+
+        <section class="seo-section">
+            <h2>The Art of Naming Fantasy Kingdoms</h2>
+            <p>Choosing a name for your fictional realm is a vital step in worldbuilding. A kingdom's name carries the weight of its history, the pride of its people, and the legacy of its founders. Whether you are writing a high-fantasy novel or running a Dungeons and Dragons (D&D) campaign, the name sets the initial tone for your audience.</p>
+            
+            <h2>Historical and Linguistic Influence</h2>
+            <p>Our Kingdom Name Generator uses a combination of Old English, Latin, and Germanic phonetic roots. For example, suffixes like "-gard" suggest a protected or fortified enclosure, whereas "-ia" denotes a sovereign state. By understanding these linguistic conventions, your world feels grounded and realistic.</p>
+            
+            <h2>FAQs about Kingdom Names</h2>
+            <div class="faq">
+                <h3>Are these names royalty-free?</h3>
+                <p>Yes, all names generated on FantasyForge are free for commercial and personal use in your books, games, and projects.</p>
+                <h3>How do I choose the best name?</h3>
+                <p>Consider the geography. A kingdom in the mountains might use prefixes like "Iron" or "Storm," while a coastal empire might use "Azure" or "Mist."</p>
+            </div>
+        </section>
+
+        <section class="related-tools">
+            <h2 style="color:var(--accent-gold);">Related Worldbuilding Tools</h2>
+            <div class="gen-controls">
+                <a href="city-name-generator.html" class="nav-link">City Generator</a>
+                <a href="world-name-generator.html" class="nav-link">World Generator</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
